@@ -1,6 +1,6 @@
-name,job,sex
-Juan,Software Developer,M
-John,Manager,M
-Peter,Data Engineer,M
-Deivi,Salesman,M
-Ana,Front Developer,F
+name,job,sex,age,salary,project
+Maritza,Front Developer,F,22,72000,Project B
+Deivi,Software Developer,M,23,72000,Project A
+Manuela,Software Developer,M,24,72000,Project B
+Antony,Software Developer,M,30,72000,Project A
+Martha,Front Developer,F,23,74000,Project A
