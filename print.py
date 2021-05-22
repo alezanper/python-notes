@@ -34,9 +34,9 @@ print(0o2020)    # octal
 print(0x2020)	# hexa
 # 8224
 
+print("when at least one argument is a float, the result is a float")
 print(3 // 2)
 # 1
-
 print(3. // 2)	
 # 1.0
 
@@ -50,3 +50,8 @@ print(3 ** 9)
 print((9 / 2), (9 // 2))
 # 4.5 4
 
+print("Replication")
+print("a"*3)
+# aaa
+print("2"*3)
+# 222
