@@ -35,3 +35,28 @@ star = "*"
 print([star for i in range(5)])     # ['*', '*', '*', '*', '*'] 1d
 print([[star for j in range(2)] for k in range(3)])	# it Creates a matriz 3x2 2d
 print([[[star for r in range(1)] for f in range(2)] for t in range(3)])  # 3x2x1 3d
+
+print("\npop() removes the last element in a list")
+my_list = [-2, 3, 7, 0, 4]
+print(my_list)
+print(my_list.pop(), "was removed")
+print(my_list)
+
+# Using lists reference 
+print("\nUsing list Reference")
+x = ["a","b","c"]
+y = x
+y[1] = "z"
+# Print the same
+print(x)
+print(y)
+
+# For creating a copy with different data memory you should use
+print("\nCreating a copy using data memory and not a reference")
+y=x[:]
+# or
+y=list(x)
+y = y + ["o"]
+# Print different lists
+print(x)
+print(y)

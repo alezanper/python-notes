@@ -19,3 +19,4 @@ print("\nThe 2 is", duplicates, "times in ", tup)    # outputs: 4
 my_list = ["car", "Ford", "flower", "Tulip"]
 t = tuple(my_list)
 print("\nList",my_list,"to tuple:",t)
+

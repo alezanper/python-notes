@@ -29,3 +29,10 @@ for letter in text:
     if letter == "x":
         continue
     print(letter, end="")
+
+# Using for with multiple lists
+print("\n\nUsing multiple lists with for")
+names = ["Alex", "John", "Cristopher"]
+lastnames = ["Benavides", "Smith", "Connor"]
+for i, j in zip(names, lastnames):
+    print(i, j) 
