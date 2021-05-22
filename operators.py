@@ -23,3 +23,10 @@ print("\nNumbers")
 print(11111111, "is equal to", 11_111_111)
 print(.4, "is equal to", 0.4)
 print(300000000.0, "is equal to", 3e8)
+
+# Cast 
+si = '13'
+sf = '1.3'
+itg = int(si)
+flt = float(sf)
+print(itg + flt)    #14.3
