@@ -55,3 +55,24 @@ print("a"*3)
 # aaa
 print("2"*3)
 # 222
+
+print("A variable could be any type of data and is case sensitive")
+a = 10
+b = "Hello world!"
+c = 11.1
+d = True
+print(a)
+print(b)
+print(c)
+print(d)
+
+# Print out type of variables
+print(type(a))  #<class 'int'>
+print(type(b))  #<class 'str'>
+print(type(c))  #<class 'float'>
+print(type(d))  #<class 'bool'>
+
+print("Formatting data")
+name = 'Alexander'
+age = 33
+"I'm {} and my age is {}".format(name, age)
