@@ -1,3 +1,12 @@
+"""
+class Python:
+    population = 1					#Class variable
+    victims = 0						#Class variable
+    def __init__(self):
+        self.length_ft = 3			#Instance Variable
+        self.__venomous = False		#Instance Variable
+"""   
+
 ## Class variables
 class myClass:
     counter = 0
