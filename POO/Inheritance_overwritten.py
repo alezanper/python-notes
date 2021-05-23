@@ -13,4 +13,4 @@ class C(B):
     pass
 
 my_class = C()
-print(my_class.var, my_class.fun())   #200 201
+print(my_class.var, my_class.fun()) # 200 201

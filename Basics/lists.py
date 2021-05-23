@@ -60,3 +60,25 @@ y = y + ["o"]
 # Print different lists
 print(x)
 print(y)
+
+# Creating a list using generators
+list_1 = []
+
+for ex in range(6):
+    list_1.append(10 ** ex)
+
+list_2 = [10 ** ex for ex in range(6)]
+
+print("\nCreating a list using generators")
+print(list_1)   # [1, 10, 100, 1000, 10000, 100000]
+print(list_2)   # [1, 10, 100, 1000, 10000, 100000]
+
+
+## Conditionals on lists
+
+the_list = []
+for x in range(10):
+    the_list.append(1 if x % 2 == 0 else 0)
+
+print("\nCreating a list using conditionals")
+print(the_list) # [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
