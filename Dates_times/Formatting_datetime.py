@@ -11,3 +11,5 @@ print("Time:", t.strftime("%H:%M:%S"))  # Time: 20:46:21
 
 dt = datetime(2020, 11, 4, 14, 53)
 print("Full Date:", dt.strftime("%y/%B/%d %H:%M:%S"))    # Full Date: 20/November/04 14:53:00
+
+print(datetime.strptime("2019/11/04 14:53:00", "%Y/%m/%d %H:%M:%S"))    # 2019-11-04 14:53:00
