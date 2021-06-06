@@ -1,5 +1,0 @@
-Writing
-python
-code
-is awesome 
-using with 
