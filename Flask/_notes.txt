@@ -1,0 +1,34 @@
+pip install flask
+
+################
+## http verbs ##
+################
+
+Get
+Get / HTTP/1.1
+Retrieve something
+
+POST 
+POST /item
+Receive data, and use it 
+
+PUT
+PUT /item
+Make sure something is there
+
+DELETE
+DELETE /item
+Remove something
+
+#####################
+## REST Principles ##
+#####################
+- A rest api is a way of thinking about how a web server responds to your request
+- It does not respond with just data, it responds with resources
+- Resources are similar to object-oriented programming
+- Think of the server as having resources, and each is able to interact with the pertinent request
+- key feature is that REST is supposed to be stateless, this means one request cannot depend on any other requests
+- The server only knows about the current request, and not any previous requests
+- The application must send enough data to identify the user in every request, or else the server won't associate the request with the user
+
+
