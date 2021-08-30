@@ -32,3 +32,15 @@ Remove something
 - The application must send enough data to identify the user in every request, or else the server won't associate the request with the user
 
 
+virtual environment
+esentialy gives us a clean python installation (no libraries)
+pip freeze  #current libraries
+pip install virtualenv
+virtualenv venv --python=python3.8
+source venv/bin/activate    # for mac and linux
+./venv/Scripts/activate.bat # for windows
+pip install Flask-RESTful
+
+jsonify is not necessary with flask restful
+
+pip install Flask-JWT   # json web token
