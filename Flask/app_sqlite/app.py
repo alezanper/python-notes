@@ -17,4 +17,6 @@ api.add_resource(Item, '/item/<string:name>')
 api.add_resource(ItemList, '/items')    
 api.add_resource(UserRegister, '/register')
 
-app.run(port=5000, debug=True)
+# Only executes when a user run this file (python app.py)
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)
