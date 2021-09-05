@@ -31,7 +31,7 @@ class Item(Resource):
             return {'item': {'name': row[0], 'price': row[1]}}
 
     def post(self, name):
-        if self.get(name):
+        if self.find_by_name(name):
             return {'message': "An item with name '{}' already exists".format(name)}, 400
 
         data = Item.parser.parse_args()
@@ -51,8 +51,15 @@ class Item(Resource):
         return item, 201
 
     def delete(self, name):
-        global items
-        items = list(filter(lambda x: x['name']!=name, items))
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = "DELETE FROM items WHERE name=?"
+        cursor.execute(query, (name,))
+
+        connection.commit()
+        connection.close()
+
         return {'message': 'Item deleted'}
 
     def put(self, name):
