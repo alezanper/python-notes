@@ -8,6 +8,8 @@ from resources.user import UserRegister
 from resources.item import Item, ItemList
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'     # Could be other databases
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'alex'
 api = Api(app)
 
@@ -19,4 +21,6 @@ api.add_resource(UserRegister, '/register')
 
 # Only executes when a user run this file (python app.py)
 if __name__ == '__main__':
+    from db import db
+    db.init_app(app)
     app.run(port=5000, debug=True)
