@@ -82,3 +82,8 @@ for x in range(10):
 
 print("\nCreating a list using conditionals")
 print(the_list) # [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+
+print("\n Using the constructor")
+my_word = "hello"
+my_word_list = list(my_word)
+print(my_word_list) # ['h', 'e', 'l', 'l', 'o']
