@@ -1,6 +1,7 @@
 # Using strings 
-#Python strings are inmutable
+# Python strings are inmutable
 i_am = 'I\'m'
+i_am_2 = """I'm"""
 empty = ''
 multiline = '''a
 b
@@ -11,6 +12,7 @@ char_1 = 'a'
 char_2 = ' '  # space
 
 print(i_am) # I'm
+print(i_am_2) # I'm
 print(len(i_am))    # 3
 print(len(empty))   # 0
 print(len(multiline))	# 5
