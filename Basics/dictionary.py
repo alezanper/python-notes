@@ -1,5 +1,14 @@
 # Dictionaries are mutable
 # keys are case sensitive
+
+empty_dictionary = {}
+print(empty_dictionary)
+
+# Using constructor
+base = [("sp", "spanish"),("en", "english")]
+base_dictionary = dict(base)
+print(base_dictionary)
+
 dictionary = {"hola": "mundo", "hello": "world"}
 print(dictionary['hola'])	# mundo
 
