@@ -9,4 +9,4 @@ s.add(5)
 print(s)
 
 hello = "hello"
-print(set(hello))
+print(set(hello))   # {'h', 'e', 'l', 'o'}
