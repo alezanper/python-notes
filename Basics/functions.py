@@ -26,3 +26,8 @@ var = 1
 print("var value outside function:", var)
 my_function()
 print("var value after function:", var)
+
+# Built-in Functions
+# Input
+age = int(input("How old are you?\n"))
+print(age)
