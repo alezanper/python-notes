@@ -7,7 +7,7 @@ for i in range(2, 8):
     print("The value of i is currently", i)
 
 # Using break
-print("The break instruction:")
+print("\nThe break instruction:")
 for i in range(1, 6):
     if i == 3:
         break
